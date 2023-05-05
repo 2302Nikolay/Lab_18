@@ -15,10 +15,6 @@
             <StackPanel Orientation="Horizontal">
                 <Label Content="p"/>
                 <TextBox Text="0,00" MinWidth="70" Name="TextP"/>
-                <Label Content="f"/>
-                <TextBox Text="0,00" MinWidth="70" Name="TextF"/>
-                <Label Content="x"/>
-                <TextBox Text="0,00" MinWidth="70" Name="TextX"/>
                 <Label Content="y"/>
                 <TextBox Text="0,00" MinWidth="70" Name="TextY"/>
                 
@@ -32,7 +28,7 @@
                     <ComboBoxItem>2</ComboBoxItem>
                     <ComboBoxItem>3</ComboBoxItem>
                     <ComboBoxItem>4</ComboBoxItem>
-                    <ComboBoxItem>5</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem> 
                 </ComboBox>
                 <Label Content="K"/>
                 <ComboBox MinWidth="100" Name="ComboK">
