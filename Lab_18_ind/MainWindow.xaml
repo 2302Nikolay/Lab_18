@@ -1,0 +1,54 @@
+﻿<Window x:Class="Lab_18_ind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_18_ind"
+        mc:Ignorable="d"
+        Title="Индивидуальное задание (Вариант 1)" Height="450" Width="500"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Height">
+
+    <StackPanel>
+        <Image Height="100" Source="/indimg.png"/>
+        <GroupBox Header="Параметры">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="p"/>
+                <TextBox Text="0,00" MinWidth="70" Name="TextP"/>
+                <Label Content="f"/>
+                <TextBox Text="0,00" MinWidth="70" Name="TextF"/>
+                <Label Content="x"/>
+                <TextBox Text="0,00" MinWidth="70" Name="TextX"/>
+                <Label Content="y"/>
+                <TextBox Text="0,00" MinWidth="70" Name="TextY"/>
+                
+            </StackPanel>
+        </GroupBox>
+        <GroupBox>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="N"/>
+                <ComboBox MinWidth="100" Name="ComboN">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                </ComboBox>
+                <Label Content="K"/>
+                <ComboBox MinWidth="100" Name="ComboK">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox>
+            <StackPanel Orientation="Horizontal">
+                <Label Name="Label" Content="Ответ: "/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Считать" Width="100" Click="Calc_Click"/>
+    </StackPanel>
+</Window>
